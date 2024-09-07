@@ -88,10 +88,10 @@ body {font-family: "Lato", sans-serif}
 	<div class="w3-black w3-container w3-content" style="max-width:900px">
 		<h2>About me</h2>
 		<p class="w3-justify">
-			<img src="images/Portrait-square.jpg" width="320" height="320" align="right" hspace="10"/>
-			<img src="images/stamp.jpg" width="90" height="90" align="left" hspace="10"/>
+			<img src="images/Portrait-square.jpg" width="210" height="210" align="right" hspace="10"/>
+			<img src="images/stamp.jpg" width="65" height="65" align="left" hspace="10"/>
 			My name is 羅致翹 (<a href="https://en.wikipedia.org/wiki/Cantonese" target="_blank" rel="noopener noreferrer">Cantonese</a>:
-			<audio controls="controls" style="width:205px !important;height:12px !important;"><source src="audio/羅致翹.mp3" type="audio/mpeg"/><a href="audio/羅致翹.mp3">download audio<a></a></a></audio> 
+			<audio controls="controls" style="width:170px !important;height:12px !important;"><source src="audio/羅致翹.mp3" type="audio/mpeg"/><a href="audio/羅致翹.mp3">download audio<a></a></a></audio> 
 			| <a href="https://en.wikipedia.org/wiki/Jyutping" target="_blank" rel="noopener noreferrer">Jyutping</a>: lo4 zi3 kiu4 
 			| IPA: /lɔː˨˩/ /tsiː˧/ /kʰiːu˨˩/). 
 			"羅" is my family name. "致" means "becoming" and "翹" means "the topmost; the best". My father wishes me to strive for the best in my life. 
@@ -120,7 +120,7 @@ body {font-family: "Lato", sans-serif}
 		<p style="text-align: justify;">
 			Dr. Chi-kiu (Jackie) Lo is a senior research officer in the multilingual text processing team of the 
 			<a href="http://www.nrc-cnrc.gc.ca/eng" target="_blank" rel="noopener noreferrer">National Research Council Canada (NRC-CNRC)</a>. 
-			Dr. Lo graduated with a Doctor of Philosophy (PhD) degree in 
+			Dr. Lo received a Doctor of Philosophy (PhD) degree in 
 			<a href="https://www.cse.ust.hk/" target="_blank" rel="noopener noreferrer">Computer Science and Engineering (CSE)</a> from the 
 			<a href="https://www.ust.hk/" target="_blank" rel="noopener noreferrer">Hong Kong University of Science and Technology (HKUST)</a>.
 		</p>
@@ -129,11 +129,10 @@ body {font-family: "Lato", sans-serif}
 			Jackie's research interest is multilingual natural language processing with particular focus on semantics in machine translation (MT), its 
 			quality evaluation and estimation. Jackie is the designer of a unified semantic MT quality evaluation and estimation metric, 
 			<a href="yisi.html">YiSi</a>. YiSi is readily available for evaluating translation quality in any language 
-			using frame semantics and contextual embeddings. YiSi correlates very well with human in the metrics shared tasks of 
-			the Conference on Machine Translation (WMT) for recent years. YiSi-based semantic textual similarity systems are also consistently 
-			the leading performers in the WMT parallel corpus filtering and alignment shared tasks. Jackie was awarded the Rising Star 
+			using frame semantics and contextual embeddings. YiSi correlates very well with human at the metrics shared tasks of 
+			the Conference on Machine Translation (WMT) in recent years. Jackie was awarded the Rising Star 
 			in the Digital Technologies Research Center of the NRC-CNRC in 2018. Jackie served as the co-chair for the diversity and inclusion committee 
-			in EMNLP 2019 and NAACL 2025, the area co-chair for machine translation in ACL 2020, COLING 2022, ACL 2023 and organizing committee member 
+			in EMNLP 2019 and NAACL 2025, the area co-chair for machine translation in ACL 2020, COLING 2022, ACL 2023 and the organizing committee member 
 			for the WMT Metrics shared task since 2021.
 		</p>
 	</div>
@@ -145,22 +144,6 @@ body {font-family: "Lato", sans-serif}
 </footer>
 
 <script>
-// Automatic Slideshow - change image every 4 seconds
-var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 4000);    
-}
-
 // Used to toggle the menu on small screens when clicking on the menu button
 function myFunction() {
   var x = document.getElementById("navDemo");
