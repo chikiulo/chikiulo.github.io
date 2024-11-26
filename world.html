@@ -24,58 +24,20 @@ body {font-family: "Lato", sans-serif}
 <div class="w3-dark-grey w3-content" style="max-width:2000px">
 
 	<!-- Site title -->
-	<div class="w3-black w3-content w3-container" style="max-width:900px">
-		<img src="images/Portrait-square-small.jpg" alt="Small icon portrait" style="vertical-align:text-bottom"/>
-		<a href="index.html" class="w3-padding-large" style="text-decoration:none;color:inherit;font-size:48px;font-family:'Kiwi Maru';">LO, Chi-kiu 羅致翹 (Jackie)</a>
-		<div  style="text-align:center" class="w3-text-cyan w3-wide">
-		<a href="https://nrc.canada.ca/en/corporate/contact-us/nrc-directory-science-professionals/chi-kiu-jackie-lo" target="_blank"> <i class="fas fa-id-badge" style="font-size:27px"></i></a>&nbsp;
-		<a href="https://scholar.google.com/citations?user=lazgN5IAAAAJ&hl=en" target="_blank"><i class="ai ai-google-scholar" style="font-size:27px"></i></a>&nbsp;
-		<a href="https://www.semanticscholar.org/author/Chi-kiu-Lo/37315056" target="_blank"><i class="ai ai-semantic-scholar" style="font-size:27px"></i></a>&nbsp;
-		<a href="https://orcid.org/0000-0001-8714-7846" target="_blank"><i class="ai ai-orcid" style="font-size:27px"></i></a>&nbsp;
-		<a href="https://github.com/chikiulo" target="_blank"><i class="fab fa-github" style="font-size:27px"></i></a>&nbsp;
-		<a href="https://www.linkedin.com/in/chikiu-jackie-lo/" target="_blank"><i class="fab fa-linkedin" style="font-size:27px"></i></a>&nbsp;
-		<a href="https://www.facebook.com/jackie.chikiu.lo/" target="_blank"><i class="fab fa-facebook" style="font-size:27px"></i></a>&nbsp;
-		<a href="https://twitter.com/jackiecklo" target="_blank"><i class="fab fa-twitter" style="font-size:27px"></i></a>&nbsp;
-		<a href="https://www.youtube.com/channel/UC3Kga0YjumHqPmw0GpwPwdw" target="_blank"><i class="fab fa-youtube" style="font-size:27px"></i></a>&nbsp;
-		<a href="https://www.clubhouse.com/@jackielo" target="_blank"><span class="material-icons">waving_hand</span></a>
-		</div>
+	<div class="w3-black w3-content w3-container" style="max-width:900px;padding-top:20px;padding-bottom:20px;">
+		<div w3-include-html="title.html"></div>
 	</div>
 	
 	<!-- Navbar -->
 	<div class="w3-grey w3-content w3-container" style="max-width:900px">
 		<a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-		<a href="index.html" class="w3-bar-item w3-button w3-padding-small">Home</a>
-		<a href="research.html" class="w3-bar-item w3-button w3-padding-small w3-hide-small">Research</a>
-		<a href="publications.html" class="w3-bar-item w3-button w3-padding-small w3-hide-small">Publications</a>
-		<a href="awards.html" class="w3-bar-item w3-button w3-padding-small w3-hide-small">Grants & Awards</a>
-		<a href="teaching.html" class="w3-bar-item w3-button w3-padding-small w3-hide-small">Teaching</a>
-		<a href="service.html" class="w3-bar-item w3-button w3-padding-small w3-hide-small">Community</a>
-		<a href="world.html" class="w3-bar-item w3-button w3-padding-small w3-hide-small">The World</a>
-		<a href="creation.html" class="w3-bar-item w3-button w3-padding-small w3-hide-small">Creation</a>
-		<!-- 
-		<div class="w3-dropdown-hover w3-hide-small">
-		  <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
-		  <div class="w3-dropdown-content w3-bar-block w3-card-4">
-			<a href="#" class="w3-bar-item w3-button">Merchandise</a>
-			<a href="#" class="w3-bar-item w3-button">Extras</a>
-			<a href="#" class="w3-bar-item w3-button">Media</a>
-		  </div>
-		</div>
-		<a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
-		-->
+		<div w3-include-html="navbar.html"></div>
 	</div>
 </div>
 
 <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
 <div id="navDemo" class="w3-bar-block w3-grey w3-hide w3-hide-large w3-hide-medium w3-top">
-    <a href="index.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Home</a>
-    <a href="research.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Research</a>
-    <a href="publications.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Publications</a>
-    <a href="awards.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Grants & Awards</a>
-    <a href="teaching.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Teaching</a>
-    <a href="service.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Community</a>
-    <a href="world.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">The World</a>
-	<a href="creation.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small" onclick="myFunction()">Creations</a>
+		<div w3-include-html="navbar_s.html"></div>
 </div>
 
 <!-- Page content -->
@@ -533,6 +495,34 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements: */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /* Make an HTTP request using the attribute value as the file name: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /* Remove the attribute, and call this function once more: */
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /* Exit the function: */
+      return;
+    }
+  }
+}
+includeHTML();
 </script>
 
 </body>
